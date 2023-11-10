@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import userRoutes from './routes/user.route.js';
 
 dotenv.config();
+console.log("uri", process.env.MONGO);
 
 mongoose
   .connect(process.env.MONGO)
